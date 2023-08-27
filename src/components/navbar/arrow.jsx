@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function Arrow({orientation}) {
+export default function Arrow({orientation, handle}) {
  
   return (
     <div>
-        <span>{orientation}</span>
+        <button onClick={handle}>{orientation}</button>
     </div>
   );
 };
